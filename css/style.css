@@ -373,3 +373,18 @@ ul{
     display: block;
     font-size: 40px;
 }
+/* Team area */
+.tema-area {
+	padding: 50px;
+}
+
+.team-content h4 {
+    text-transform: capitalize;
+    font-size: 29px;
+  }
+  .team-content span {
+	display: block;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 600;
+}
