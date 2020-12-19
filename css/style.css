@@ -56,7 +56,7 @@ ul{
     padding: 5px 0px;
 }
 .navbar-nav.ml-auto li a:hover{
-    color: #000e1d;
+    color: #0054ad;
 }
 /* Banner Part */
 .bg{
@@ -422,3 +422,38 @@ ul{
 .video-content i{
     font-size: 30px;
 }
+/* Process Area */
+.price-area{
+    padding: 50px;
+}
+.price-content{
+    box-shadow: 0px 15px 40px #e6e6e6;
+    padding: 50px;
+}
+
+.price-content p {
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .price-content a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .price-content h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .price-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    background: #f9f9f9;
+    padding: 20px
+  }
+  .price-content .active {
+    background: var(--theme-color);
+    color: #fff;
+  }
+  .price-content h1 span {
+    font-size: 20px;
+    font-weight: 600;
+  }
