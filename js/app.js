@@ -47,4 +47,8 @@
         delay: 10,
         time: 1000
     });
+
+    $('.video-popup').magnificPopup({
+        type:'iframe',
+    });
   });
