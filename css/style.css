@@ -7,7 +7,10 @@ body{
 }
 html,body{
     height: 100%;
+    scroll-behavior: smooth;
+    transition: .7s;
 }
+
 :root{
     --theme-color: #05386b;
 }
@@ -360,7 +363,6 @@ ul{
 }
 .single-counter{
     color: #fff;
-    padding: 10px;
 }
 .single-counter i{
     font-size: 20px;
@@ -438,6 +440,24 @@ ul{
   .price-content a {
     text-decoration: none;
     color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  .price-content a::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(to right,#05386b,#001120);
+    height: 100%;
+    transition: .7s;
+    z-index: -1;
+  }
+  .price-content a:hover::before {
+    width: 100%;
+    color: #fff;
   }
   .price-content h4 {
     font-weight: 600;
@@ -457,3 +477,98 @@ ul{
     font-size: 20px;
     font-weight: 600;
   }
+  /* Testimonial Area */
+  .testimonial-area{
+      color: #fff;
+  }
+  .single-testimonial i{
+      font-size: 30px;
+  }
+  .author-info{
+      position: relative;
+  }
+  .author-info img{
+      position: absolute;
+      left: 0;
+      top: -5px;
+      border-radius: 50%;
+      max-width: 60px;
+      border: 1px dashed #ddd;
+      padding: 3px;
+  }
+  .author-info h4{
+      text-transform: capitalize;
+      padding-left: 75px;
+      margin-top: 25px;
+  }
+  .single-testimonial p{
+      width: 100%;
+  }
+  .author-info h4 span{
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 16px;
+    display: block;
+}
+/* Blog Area */
+.blog-img img {
+  width: 100%;
+}
+.blog-img img:hover{
+    background-color: #000000;
+    opacity: 0.70;
+}
+.blog-meta {
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0px 15px 40px #ddd;
+  position: relative;
+  z-index: 10;
+  margin-top: -85px;
+  margin: 0 40px;
+  margin-top: -18px;
+  background: #fff;
+  border-radius: 5px;
+}
+.blog-title a{
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+.blog-title a:hover{
+    color: var(--theme-color);
+}
+.blog-title h4{
+    color: #333;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.blog-title p{
+    padding: 10px 0px;
+}
+/* Subscribe Area */
+.subscribe-area{
+    color: #fff;
+}
+.subscribe-area form{
+    position: relative;
+}
+.subscribe-area form input{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+.subscribe-area form input[type="submit"]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--theme-color);
+    color: #fff;
+}
