@@ -23,6 +23,12 @@ html,body{
 .pb-100{
     padding-bottom: 100px;
 }
+.pt-50{
+    padding-top: 50px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
 img{
     max-width: 100%;
 }
@@ -43,12 +49,15 @@ ul{
     position: fixed;
     background-color: #333333;
     border-bottom: 1px solid #fff;
-	z-index: 9;
+	z-index: 999;
 }
 .navbar-brand {
 	font-size: 30px;
 	color: #fff;
 	font-weight: 600;
+}
+.navbar-nav li.current a {
+	color: var(--theme-color);
 }
 .navbar-nav.ml-auto li a {
 	color: #fff;
@@ -108,7 +117,6 @@ ul{
     background-color: #000e1d;
     color: #fff;
     text-decoration: none;
-    border: 1px solid #fff;
 }
 .banner-area.owl-carousel .owl-stage-outer{
     height: 100%;
@@ -126,6 +134,9 @@ ul{
 	display: block;
 	margin: 10px 0px;
 	border-radius: 20px;
+}
+.banner-area .owl-dots button:focus{
+    outline: none;
 }
 .banner-area .owl-dots {
 	position: absolute;
@@ -561,6 +572,9 @@ ul{
     border: 0;
     border-radius: 10px;
 }
+.subscribe-area form input:focus{
+    outline: none;
+}
 .subscribe-area form input[type="submit"]{
     position: absolute;
     right: 0;
@@ -589,7 +603,7 @@ ul{
   }
   .single-address i {
     position: absolute;
-    font-size: 25px;
+    font-size: 15px;
     padding: 0;
     background: var(--theme-color);
     color: #fff;
@@ -645,3 +659,64 @@ ul{
     max-width: 160px;
     margin-left: 20px;
 }
+/* Footer Area */
+.footer-area{
+    background-color: #333;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+.footer-item h4::before {
+	position: absolute;
+	content: '';
+	width: 60px;
+	height: 1px;
+	background: #fff;
+    left: 15px;
+    top: 25%;
+}
+.one i {
+    padding: 5px;
+    font-size: 20px;
+    background: #fff;
+    color: #333;
+    padding: ;
+    margin: 2px;
+    border-radius: 5px;
+  }
+  .one i:hover{
+      color: #fff;
+      background-color: var(--theme-color);
+      cursor: pointer;
+  }
+  .two a {
+    text-decoration: navajowhite;
+    color: #fff;
+    padding: ;
+    margin: ;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .two a:hover{
+      color: var(--theme-color);
+      transition: .7s;
+  }
+  .two i {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .three i {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .three a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: lowercase;
+    text-decoration: none;
+  }
+  .footer-end{
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+  }
