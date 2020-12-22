@@ -10,7 +10,17 @@ html,body{
     scroll-behavior: smooth;
     transition: .7s;
 }
-
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    50%{
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 :root{
     --theme-color: #05386b;
 }
@@ -48,7 +58,7 @@ ul{
     right: 0;
     position: fixed;
     background-color: #333333;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #444;
 	z-index: 999;
 }
 .navbar-brand {
@@ -113,6 +123,10 @@ ul{
     text-decoration: none;
     color: #fff;
 }
+.btn-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
 .banner-content a:hover{
     background-color: #000e1d;
     color: #fff;
@@ -129,14 +143,15 @@ ul{
 }
 .banner-area .owl-dots button{
 	background: #05386b;
-	width: 5px;
-	height: 35px;
+	width: 10px;
+	height: 10px;
 	display: block;
 	margin: 10px 0px;
 	border-radius: 20px;
 }
 .banner-area .owl-dots button:focus{
     outline: none;
+    height: 20px;
 }
 .banner-area .owl-dots {
 	position: absolute;
@@ -186,6 +201,9 @@ ul{
   }
   .about-img{
       position: relative;
+  }
+  .about-img img:hover{
+    animation: flash 1.5s;
   }
   .about-img:after{
       position: absolute;
@@ -287,7 +305,34 @@ ul{
 .single-service{
     box-shadow: 0px 15px 40px #eee;
     padding: 25px;
+    position: relative;
+    z-index: 1;
+    color: #333;
 }
+/* .single-service:hover{
+    background: linear-gradient(to right,#05386b,#001120);
+    transition: .7;
+    color: #fff;
+} */
+.single-service::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(to right,#001120,#05386b);
+    height: 100%;
+    transition: .4s;
+    z-index: -1;
+  }
+.single-service:hover::before {
+    width: 100%;
+  }
+  .single-service:hover{
+      color: #fff;
+      cursor: pointer;
+  }
 .single-service i{
     font-size: 30px;
 }
@@ -396,6 +441,9 @@ ul{
 }
 .single-team img {
     width: 100%;
+}
+.single-team img:hover{
+    animation: flash 2s;
 }
 .team-content {
     position: absolute;
