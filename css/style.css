@@ -149,10 +149,6 @@ ul{
 	margin: 10px 0px;
 	border-radius: 20px;
 }
-.banner-area .owl-dots button:focus{
-    outline: none;
-    height: 20px;
-}
 .banner-area .owl-dots {
 	position: absolute;
 	right: 20px;
@@ -163,8 +159,10 @@ ul{
 }
 .banner-area .owl-dots button.active{
     background-color: #fff !important;
+    outline: none;
+    height: 20px;
 }
-/* About Section Start */
+/*Section Start */
 
 .section-title {
     text-align: v;
@@ -192,6 +190,15 @@ ul{
 	transform: translateX(-50%);
 }
 
+/* About Section Start */
+.closebtn {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+  }
 .about-content h4 {
     text-transform: capitalize;
     margin-bottom: 15px;
