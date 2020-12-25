@@ -60,4 +60,161 @@
 
 /* Wide Mobile Layout: 480px. */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.banner-content h2 {
+    font-size: 25px;
+  }
+  .banner-content a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+.section-title h4 {
+    font-size: 24px;
+  }
+  .section-title p {
+    font-size: 14px;
+  }
+  .about-content h4 {
+    font-size: 18px;
+  }
+  .about-content p {
+    font-size: 12px;
+  }
+.about-content ul li {
+    font-size: 12px;
+  }
+  .about-content a {
+    font-size: 11px;
+  }
+  .btn-btn{
+      font-size: 12px;
+  }
+.about-img img {
+    margin-top: 22px;
+    width: 100%;
+  }
+  .single-about h4 {
+    font-size: 18px;
+  }
+  .single-about p {
+    font-size: 14px;
+  }
+  .single-about a {
+    font-size: 12px;
+  }
+  .single-feature h4 {
+    font-size: 18px;
+  }
+  .single-feature p {
+    font-size: 12px;
+  }
+.single-service h4 {
+    font-size: 18px;
+  }
+  .single-service p {
+    font-size: 12px;
+  }
+  .single-service i {
+    font-size: 18px;
+  }
+  .single-process h4 {
+    font-size: 18px;
+  }
+  .single-process p {
+    font-size: 12px;
+  }
+  .project-content h4 {
+    font-size: 18px;
+  }
+  .single-counter h4 {
+    font-size: 12px;
+  }
+  .single-counter span {
+    font-size: 22px;
+  }
+  .team-content h4 {
+    font-size: 18px;
+  }
+  .team-content span {
+    font-size: 12px;
+  }
+  .video-content h4 {
+    font-size: 18px;
+  }
+  .video-content p {
+    font-size: 12px;
+  }
+  .video-content i {
+    font-size: 25px;
+  }
+.price-content h4 {
+    font-size: 18px;
+  }
+  .price-content h1 {
+    font-size: 25px;
+  }
+  .price-content h1 span {
+    font-size: 15px;
+  }
+  .price-content p {
+    font-size: 12px;
+  }
+  .single-testimonial p {
+    font-size: 12px;
+  }
+  .single-testimonial i {
+    font-size: 16px;
+  }
+  .author-info h4 {
+    font-size: 18px;
+  }
+  .blog-title h4 {
+    font-size: 18px;
+  }
+  .blog-title p {
+    font-size: 12px;
+  }
+  .blog-meta a {
+    font-size: 12px;
+  }
+  .single-address h4 {
+    font-size: 18px;
+  }
+  .single-address h4 span {
+    font-size: 16px;
+  }
+  .single-address i {
+    font-size: 12px;
+  }
+  .contact-form input {
+    font-size: 12px;
+  }
+  .contact-form textarea {
+    font-size: 12px;
+  }
+  .footer-item h4 {
+    font-size: 18px;
+  }
+  .footer-item p {
+    font-size: 12px;
+  }
+  .copyright-footer.text-center p {
+    font-size: 12px;
+  }
+.two.footer-item ul li {
+    font-size: 12px;
+  }
+  .three.footer-item ul li a {
+    font-size: 12px;
+  }
+  .three.footer-item i {
+    font-size: 12px;
+  }
+.one.footer-item i {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+.navbar.navbar-expand-lg a {
+    font-size: 16px;
+  }
+}
