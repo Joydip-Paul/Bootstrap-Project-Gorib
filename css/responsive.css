@@ -69,7 +69,7 @@
     padding: 8px 12px;
   }
 .section-title h4 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .section-title p {
     font-size: 14px;
@@ -164,6 +164,9 @@
   }
   .single-testimonial i {
     font-size: 16px;
+  }
+  .author-info{
+      left: 25%;
   }
   .author-info h4 {
     font-size: 18px;
