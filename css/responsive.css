@@ -181,7 +181,7 @@
     font-size: 12px;
   }
   .single-address h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .single-address h4 span {
     font-size: 16px;
@@ -194,6 +194,9 @@
   }
   .contact-form textarea {
     font-size: 12px;
+  }
+  .footer-item{
+      padding: 10px 0px;
   }
   .footer-item h4 {
     font-size: 18px;
@@ -219,5 +222,8 @@
   }
 .navbar.navbar-expand-lg a {
     font-size: 16px;
+  }
+  .navbar.navbar-expand-lg a:hover{
+      color: rgb(255, 0, 119);
   }
 }
