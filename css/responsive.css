@@ -220,6 +220,14 @@
       .navbar.navbar-expand-lg a:hover{
           color: rgb(255, 0, 119);
       }
+      .subscribe-area form input[type="submit"] {
+        width: 100%;
+        top: 100%;
+        border-radius: 10px;
+    }
+    .brand-img img {
+        margin-left: 65px;
+    }
 }
 
 
@@ -391,4 +399,7 @@
   .navbar.navbar-expand-lg a:hover{
       color: rgb(255, 0, 119);
   }
+  .subscribe-area form input[type="submit"]{
+    display: block;
+}
 }
